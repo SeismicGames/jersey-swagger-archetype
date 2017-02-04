@@ -21,9 +21,21 @@
         </license>
     </licenses>
 
+    <developers>
+        <developer>
+            <name>Keith Miller</name>
+            <email>kmiller@seismicgames.com</email>
+            <organization>Seismic Games</organization>
+            <organizationUrl>http://www.seismicgames.com</organizationUrl>
+        </developer>
+    </developers>
+
     <scm>
-        <url>https://github.com/SeismicGames/jersey-swagger-archetype</url>
+        <connection>scm:git:git://github.com/SeismicGames/jersey-swagger-archetype.git</connection>
+        <developerConnection>scm:git:ssh://github.com:SeismicGames/jersey-swagger-archetype.git</developerConnection>
+        <url>https://github.com/SeismicGames/jersey-swagger-archetype/tree/master</url>
     </scm>
+
     <build>
         <extensions>
             <extension>
