@@ -7,16 +7,15 @@ import io.swagger.jaxrs.listing.SwaggerSerializers;
 import org.glassfish.jersey.server.ResourceConfig;
 
 public class Application extends ResourceConfig {
-    public Application(String myPackage) {
+    public Application(String myPackage, String host, String port) {
         super();
 
         String myPackages = String.format("%s, io.swagger.resources", myPackage);
-
         packages(myPackage);
 
         BeanConfig beanConfig = new BeanConfig();
         beanConfig.setVersion("1.0.0");
-        beanConfig.setHost("localhost:8080");
+        beanConfig.setHost(String.format("%s:%s", host, port);
         beanConfig.setBasePath("/");
         beanConfig.setResourcePackage(myPackages);
         beanConfig.setScan(true);
@@ -24,5 +23,7 @@ public class Application extends ResourceConfig {
         registerClasses(ApiListingResource.class);
         registerClasses(SwaggerSerializers.class);
         registerClasses(GsonProvider.class);
+
+        register(new InstrumentedResourceMethodApplicationListener(Main.METRIC_REGISTRY));
     }
 }
