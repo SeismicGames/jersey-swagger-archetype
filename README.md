@@ -1,5 +1,5 @@
 # jersey-swagger-archetype
-A Jersey/Swagger/Grizzly RESTful API Archetype
+A Jersey2/Swagger/Grizzly RESTful API Archetype
 
 To use this, build a Maven project using the archetype:
 
@@ -7,7 +7,7 @@ To use this, build a Maven project using the archetype:
 $ mvn archetype:generate                                  \
     -DarchetypeGroupId=com.seismicgames                   \
     -DarchetypeArtifactId=jersey-swagger-archetype        \
-    -DarchetypeVersion=1.0.0                              \
+    -DarchetypeVersion=1.0.1                              \
     -DgroupId=<your.group.id>                             \
     -DartifactId=<your.artifact.id>
 ```
