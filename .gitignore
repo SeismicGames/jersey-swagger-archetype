@@ -3,3 +3,5 @@ Java-REST-Archetype.iml
 target/
 .DS_Store
 *.iml
+*.asc
+jersey-swagger-archetype-*.pom
