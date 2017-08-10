@@ -5,6 +5,7 @@ import io.swagger.jaxrs.config.BeanConfig;
 import io.swagger.jaxrs.listing.ApiListingResource;
 import io.swagger.jaxrs.listing.SwaggerSerializers;
 import org.glassfish.jersey.server.ResourceConfig;
+import com.codahale.metrics.jersey2.InstrumentedResourceMethodApplicationListener;
 
 public class Application extends ResourceConfig {
     public Application(String myPackage, String host, String port) {
