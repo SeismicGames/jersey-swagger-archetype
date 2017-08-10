@@ -1,5 +1,6 @@
 package ${package}.${artifactId}.app;
 
+import ${package}.${artifactId}.Main;
 import ${package}.${artifactId}.providers.GsonProvider;
 import io.swagger.jaxrs.config.BeanConfig;
 import io.swagger.jaxrs.listing.ApiListingResource;
