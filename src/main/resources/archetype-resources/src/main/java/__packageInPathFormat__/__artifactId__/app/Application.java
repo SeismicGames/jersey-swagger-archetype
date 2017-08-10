@@ -15,7 +15,7 @@ public class Application extends ResourceConfig {
 
         BeanConfig beanConfig = new BeanConfig();
         beanConfig.setVersion("1.0.0");
-        beanConfig.setHost(String.format("%s:%s", host, port);
+        beanConfig.setHost(String.format("%s:%s", host, port));
         beanConfig.setBasePath("/");
         beanConfig.setResourcePackage(myPackages);
         beanConfig.setScan(true);
